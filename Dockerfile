@@ -18,3 +18,4 @@ RUN apk --update add --no-cache \
   opcache \
   pdo_mysql \
   zip
+COPY ./docker-ph.ini $PHP_INI_DIR/conf.d/
