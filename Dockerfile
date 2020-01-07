@@ -1,4 +1,4 @@
-FROM php:7-fpm-alpine
+FROM php:7.3-fpm-alpine
 # Alpine packages
 RUN apk --update add --no-cache \
   coreutils \
@@ -18,4 +18,4 @@ RUN apk --update add --no-cache \
   opcache \
   pdo_mysql \
   zip
-COPY ./docker-ph.ini $PHP_INI_DIR/conf.d/
+COPY ./docker-php.ini $PHP_INI_DIR/conf.d/
