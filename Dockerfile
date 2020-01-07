@@ -18,3 +18,5 @@ RUN apk --update add --no-cache \
   opcache \
   pdo_mysql \
   zip
+  # Override with custom php settings
+COPY ./docker-php.ini $PHP_INI_DIR/conf.d/
